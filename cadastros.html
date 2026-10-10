@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja voluntário | Mãos que Transformam</title>
+
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f8f3;
+            color: #34443a;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #237a57;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            background: #185c40;
+            padding: 10px 16px;
+            border-radius: 8px;
+        }
+
+        main {
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 0 18px;
+        }
+
+        form {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #00000010;
+        }
+
+        h2 { color: #237a57; }
+
+        fieldset {
+            border: 1px solid #c5d9cc;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        legend {
+            color: #237a57;
+            font-weight: bold;
+            padding: 0 8px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 11px;
+            margin-top: 5px;
+            border: 1px solid #aabbb0;
+            border-radius: 6px;
+            font: inherit;
+        }
+
+        input:focus {
+            outline: 2px solid #237a57;
+        }
+
+        button {
+            margin-top: 22px;
+            background: #237a57;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover { background: #185c40; }
+
+        footer {
+            background: #185c40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Seja voluntário</h1>
+        <p>Faça parte da transformação!</p>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="cadastros.html">Cadastro</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Cadastre-se para ajudar</h2>
+        <p>Preencha seus dados para demonstrar interesse em participar das nossas ações.</p>
+
+        <form>
+            <fieldset>
+                <legend>Dados do voluntário</legend>
+
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" autocomplete="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento" required>
+
+                <label for="telefone">Telefone (somente números):</label>
+                <input type="tel" id="telefone" name="telefone"
+                       pattern="[0-9]{10,11}"
+                       title="Digite DDD e número, usando 10 ou 11 números, sem espaços ou símbolos."
+                       required>
+
+                <label for="cep">CEP (somente números):</label>
+                <input type="text" id="cep" name="cep"
+                       pattern="[0-9]{8}"
+                       title="Digite os 8 números do CEP, sem traço."
+                       required>
+
+                <button type="submit">Enviar cadastro</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mãos que Transformam. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
